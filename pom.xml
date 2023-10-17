@@ -38,11 +38,19 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- - - - - - JSON - - - - - -->
+        <!-- - - - - - Automation - - - - - -->
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.12.1</version>
+<!--            <scope>test</scope>-->
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.5.3</version>
+<!--            <scope>test</scope>-->
         </dependency>
 
     </dependencies>
@@ -93,8 +101,7 @@
                     </execution>
                 </executions>
                 <configuration>
-<!--                    <mainClass>com.edu.App</mainClass>-->
-                    <mainClass>com.edu35time.ApplTime</mainClass>
+                    <mainClass>com.softserve.edu.App</mainClass>
                 </configuration>
             </plugin>
 
